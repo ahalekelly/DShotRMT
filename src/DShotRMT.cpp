@@ -48,9 +48,9 @@ bool DShotRMT::begin(dshot_mode_t dshot_mode, bool is_bidirectional) {
 			break;
 
 		case DSHOT300:
-			dshot_config.ticks_per_bit = 32; // ...Bit Period Time 3.33 us
+			dshot_config.ticks_per_bit = 33; // ...Bit Period Time 3.33 us
 			dshot_config.ticks_zero_high = 12; // ...zero time 1.25 us
-			dshot_config.ticks_one_high = 24; // ...one time 2.50 us
+			dshot_config.ticks_one_high = 25; // ...one time 2.50 us
 			break;
 
 		case DSHOT600:
